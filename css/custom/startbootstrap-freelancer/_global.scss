@@ -4,8 +4,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-nav{
+h6
+{
   @include heading-font;
   text-align: center;
 }
@@ -41,15 +41,15 @@ hr.star-light {
 }
 hr.star-light:after {
   color: $white;
-  background-color: $primary;
+  background-color: $white;
 }
 
 hr.star-dark {
-  border-color: $secondary;
+  border-color: $white;
 }
 hr.star-dark:after {
-  color: $secondary;
-  background-color: white;
+  color: $white;
+  background-color: $primary;
 }
 
 // Section Padding Settings
