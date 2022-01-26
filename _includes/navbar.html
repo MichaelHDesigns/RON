@@ -61,7 +61,7 @@
 
 <nav id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-        {% assign links = site.data.navigation %}
+        {% assign links = site.data.navbar %}
         {% for link in links %}
             {% assign class = nil %}
             {% if page.url contains link.url %}
