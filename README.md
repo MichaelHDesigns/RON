@@ -35,7 +35,7 @@ Make the following changes in order to customize the starter:
 * Replace `/img/profile.png` with your profile photo.
 * Update the .png files and .ico file in the root directory with your own favicon images (optional).
 * Update the color scheme by altering the `/css/custom/_variables.scss` file (optional).
-* Update the text in the following files: `/_includes/about.html`, `/_includes/interests.html`.
+* Update the text in the following files: `/_includes/about.html`, `/_includes/media.html`.
 
 ### Building the production version
 In order for the `Download Resume` button to work both when running locally and on the production
