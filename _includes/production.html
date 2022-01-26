@@ -1,3 +1,14 @@
+ <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">   
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css">  
+	<link rel="stylesheet" type="text/css" href="magnific-popup.css">   
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   		
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.js"></script>   
+	<script type="text/javascript" src="magnific-popup.js"></script>
+
 <section id="production">
   <div class="container">
     <h2 class="text-center text-uppercase text-secondary mb-0">Production Photos</h2>
@@ -8,68 +19,48 @@
       <br>
 <table cellpadding="5" cellspacing="0" border="0">
   <tbody><tr>
-<h2 style="text-align:center">Lightbox</h2>
+<div class="container">
+	<div class="popup-gallery">
 
-<div class="row">
-  <div class="column">
-    <img src="img/gallery_headshots_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="img/gallery_headshots_02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="img/gallery_headshots_03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="img/gallery_headshots_04.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="resources-item">
+					<div class="resources-category-image">
+						<a href="images/environment.jpg" title="The Image"><img alt="" src="images/environment.jpg"></a>
+					</div>
+					<div class="resources-description">
+						<p>Published: June 24, 2016</p>
+						<h4>Environment</h4>
+					</div>
+				</div>
+			</div>
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+			<div class="col-md-4">
+				<div class="resources-item">
+					<div class="resources-category-image">
+						<a href="images/architecture.jpg" title="The Image"><img alt="" src="images/architecture.jpg"></a>
+					</div>
+					<div class="resources-description">
+						<p>Published: July 5, 2016</p>
+						<h4>Architecture</h4>
+					</div>
+				</div>
+			</div>
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img/gallery_headshots_01.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img/gallery_headshots_02.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img/gallery_headshots_03.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/gallery_headshots_04.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="img/gallery_headshots_01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/gallery_headshots_02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/gallery_headshots_03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/gallery_headshots_04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-  </div>
+			<div class="col-md-4">
+				<div class="resources-item">
+					<div class="resources-category-image">
+						<a href="images/design.jpg" title="The Image"><img alt="" src="images/design.jpg"></a>
+					</div>
+					<div class="resources-description">
+						<p>Published: August 1, 2016</p>
+						<h4>Design</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 </div>
     </td>
 
