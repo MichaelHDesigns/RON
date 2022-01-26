@@ -1,21 +1,15 @@
-- title: "home"
-  href: "/"
-
-- title: "about"
-  href: "/_includes/about/html"
-  
-- title: "media"
-  href: "/_includes/media.html"
-
-- title: "gallery"
-  subcategories:
-    - subtitle: "headshots"
-      subhref: "/_inscludes/headshots.html"
-    - subtitle: "production"
-      subhref: "/documentation/production.html"
-
-- title: "resume"
-  href: "/_includes/resume.html"
-  
-- title: "contact"
-  href: "/_includes/contact.html"
+- title: About
+  url: /about.html
+- title: Media
+  url: /media.html
+- title: Gallery
+  url:  /headshots.hmtl
+  sublinks:
+    - title: Headshots
+      url: /headshots.html
+    - title: Production Photos
+      url: /production.html
+- title: Resume
+  url: /resume.html
+- title: Contact
+  url: /contact.html
