@@ -6,6 +6,7 @@ h4,
 h5,
 h6 {
   @include heading-font;
+  text-align: center;
 }
 
 // Custom Horizontal Rule with Star Icon
