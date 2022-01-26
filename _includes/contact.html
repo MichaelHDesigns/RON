@@ -1,8 +1,10 @@
-<section id="contact" class="bg-primary text-white mb-0"">
+<section id="contact">
   <div class="container">
-    <div class="row">
-      <div class="col text-center">
-      <h3 style="text-align: center">Training</h3>
+    <h2 class="text-center text-uppercase text-secondary mb-0">Contact</h2>
+    <hr class="star-dark mb-5">
+    <div class="row text-center">
+  
+  <h3 style="text-align: center">Training</h3>
       <br>
   <table cellpadding="5" cellspacing="0" border="0">
   <tbody><tr>
@@ -31,6 +33,17 @@
     <td class="body_text" valign="top">Anthony Robert Grasso, Devin Shacket, James Rees</td>
   </tr>
   </tbody></table><br><br>
+</td></tr>
+      <div class="col">
+        {% if jekyll.environment == 'production' %}
+          <a href="{{ site.root_url }}/assets/resume.pdf" download target="_blank" class="btn btn-primary btn-xl">
+            <i class="fa fa-cloud"></i> Download Resume
+          </a>
+        {% else %}
+          <a href="{{ site.base_url }}/assets/resume.pdf" download target="_blank" class="btn btn-primary btn-xl">
+            <i class="fa fa-cloud"></i> Download Resume
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>
