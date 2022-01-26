@@ -1,0 +1,49 @@
+<!-- Contacyt Section -->
+<section id="contact" class="text-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center text-uppercase mb-0">Contact</h2>
+        <hr class="star-dark mb-5">
+      </div>
+    </div>
+    <div class="row lead">
+      <div class="col-sm">
+        <table cellpadding="20" cellspacing="0" border="0" background="images/body_bg3.png">
+<tbody><tr>
+<td class="body_text" width="650">
+
+
+<table cellpadding="10" cellspacing="0" border="0">
+<!--
+<tr>
+<td width="400" class="body_text" valign="middle" align="center"><b class="body_text_18"><i>UGA TALENT</i></b>
+  <P>U-Shin Kim<br>
+    <a href="mailto:ushin@ugatalent.com">ushin@ugatalent.com</a><br>
+    917-907-4663</P></td>
+<td width="250" align="center"><img src="images/contact_uga.jpg" width="150" height="150" alt="UGA Talent"></td>
+</tr>-->
+<tbody><tr>
+<td width="325" align="center" valign="top" class="body_text"><p><b class="body_text_18"><i>DANIEL HOFF AGENCY</i></b>
+  </p>
+  <p>Dustin Flores<br>
+    <a href="mailto:Dustin@danielhoffagency.com">Dustin@danielhoffagency.com</a><br>
+347-620-4633
+</p>
+  <p>Marc Ferré<br>
+    <a href="mailto:Marc@danielhoffagency.com" target="_blank">Marc@danielhoffagency.com</a><br>
+347-620-4633
+</p> </td>
+<td width="325" class="body_text" valign="top" align="center"><b class="body_text_18"><i>WRIGHT TALENT MANAGEMENT</i></b>
+  <p>Charlie Wright <br>
+    <a href="mailto:wrighttalent@optonline.net">wrighttalent@optonline.net</a><br>
+    631-495-7141</p>  </td>
+</tr>
+</tbody></table>
+
+<center>
+
+      </div>
+    </div>
+  </div>
+</section>
