@@ -23,22 +23,6 @@ navbar-links:
     url: https://medium.com/@jdoeexample
   - fa-icon: twitter
     url: https://twitter.com/jdoeexampe
-navbar_list_large:
-- name: About
-  link: /_includes/about.html
-- name: Media
-  link: /_includes/media.html
-- name: Gallery
-  link: /_includes/headshots.html
-  dropdown: &dropdown
-  - name: Headshots
-    link: /_includes/headshots.html
-  - name: Production Photos
-    link: /_includes/production
-- name: Resume
-    link: /_includes/resume.html
-- name: Contact
-    link: /_includes/contact.html
 
 # Icon Links to display in the footer, leave empty and
 # just the email link will appear (which can be removed by
