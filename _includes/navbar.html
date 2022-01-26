@@ -1,254 +1,126 @@
+<header class="banner" role="banner">
+	
+	<nav class="navbar" role="navigation" aria-label="menu">
+		
+		<a class="logo" href="#"></a>
+
+		
+		<ul class="menu">
+			<li><a href="#about">About</a></li>
+			<li><a href="#media">Media</a></li>
+			<li class="dropdown">
+				<a href="#">
+					Gallery
+					<!--SVG dropdown icon-->
+					<svg class="icon" width="14" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"/></svg>
+				</a>
+			<!--Start of Dropdown-->
+				<ul class="dropdown-nav">
+		<li><a href="#headshots">Headshots</a></li>
+  	<li><a href="#production">Production Photos</a></li>
+				</ul>
+			</li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+</header>
+
+
 <style>
-
-     /** code by webdevtrick ( https://webdevtrick.com ) **/
+	
 body {
-	margin: 0;
-	padding: 0;
-}
-* {
-	font-family: 'Righteous', cursive;
-}
-.nav-bar {
-  height: 70px;
-  background: #bcd2d0;
+	border-top: .4rem solid #bcd2d0;
+	font-family: 'Avenir next', Helvetica, sans-serif;
 }
 
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1.4em;
+.banner {
+	height: calc(100vh - .4rem);
+	background: #bcd2d0
+		center/cover 
+		no-repeat;
 }
-.brand a img {
-	max-height: 70px;
-}
-.brand a,
-.brand a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
+// Navigation styles
 
-.nav-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-nav {
-  float: right;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  float: left;
-  position: relative;
-}
-nav ul li a,
-nav ul li a:visited {
-  display: block;
-  padding: 0 20px;
-  line-height: 70px;
-  background: #bcd2d0;
-  color: #ffffff;
-  text-decoration: none;
-}
-nav ul li a:hover,
-nav ul li a:visited:hover {
-  background: #bcd2d0;
-  color: #ffffff;
-}
-nav ul li a:not(:only-child):after,
-nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: ' ▾';
-}
-nav ul li ul li {
-  min-width: 190px;
-}
-nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
-}
-
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #bcd2d0;
-  height: 70px;
-  width: 70px;
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-
-  nav {
-    width: 100%;
-    padding: 70px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 20px;
-	padding-left: 25%;
-	 
-  }
-  nav ul li ul li a {
-    padding-left: 30%;
-  }
-
-  .nav-dropdown {
-    position: static;
-  }
-	.brand a img {
-		max-height: 60px;
-		margin-top: 5px;
+.navbar {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	color: #fff;
+	background: #bcd2d0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.icon {
+		fill: #bcd2d0;
 	}
 }
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
-}
-#nav-toggle {
-  position: absolute;
-  left: 18px;
-  top: 22px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-}
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background: #ffffff;
-  position: absolute;
-  display: block;
-  content: '';
-  transition: all 300ms ease-in-out;
-}
-#nav-toggle span:before {
-  top: -10px;
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
-#nav-toggle.active span {
-  background-color: transparent;
-}
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
-}
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
+
+.logo {
+	display: inline-block;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 1.5rem;
 }
 
-article {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
+a {
+	color: #fff;
 }
-    
+
+.menu {
+	margin: 0;
+	display: flex;
+	list-style: none;
+
+	a {
+		position: relative;
+		z-index: 2;
+		display: block;
+		letter-spacing: 0.01rem;
+		padding: 1rem 1rem;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.25rem;
+		transition: 0.2s;
+		&:hover {
+			background: #bcd2d0;
+			color: #fff;
+			.icon {
+				fill: #fff;
+			}
+		}
+	}
+}
+
+.dropdown > a {
+	display: flex;
+	align-items: center;
+	.icon {
+		margin-left: .25em;
+	}
+}
+
+.dropdown:hover {
+	.dropdown-nav {
+		opacity: 1;
+		transform: translateY(0);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+}
+
+.dropdown-nav {
+	opacity: 0;
+	transition: transform .3s cubic-bezier(0.88,-0.72, 0, 1), opacity .3s ease-in-out;
+	transform: translateY(-4rem);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+	background: #bcd2d0;
+	a {
+		font-weight: 300;
+		font-size: 1.2rem;
+	}
+}	
+	
 </style>
-<script>
-
-    /** code by webdevtrick ( https://webdevtrick.com ) **/
-(function($) { 
-  $(function() { 
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      $('.dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    });
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-  }); 
-})(jQuery);
-    
-</script>
-<!-- https://webdevtrick.com/css-responsive-navbar/ -->
-<!DOCTYPE html>
-<!-- code by webdevtrick ( https://webdevtrick.com ) -->
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Dropdown nav-bar Bar</title>
-	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css"> 
-</head>
-
-<body>
-
-  <section class="nav-bar">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="https://webdevtrick.com/"><img src="https://webdevtrick.com/wp-content/uploads/logo-fb-1.png"></a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#media">Media</a>
-        </li>
-        <li>
-          <a href="#!">Gallery</a>
-			    <ul class="nav-dropdown">
-            <li>
-              <a href="#headshots">Headshots</a>
-            </li>
-            <li>
-              <a href="#production">Production Photos</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#resume">Resume</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script  src="function.js"></script>
-</body>
-
-</html>
