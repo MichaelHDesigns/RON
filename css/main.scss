@@ -11,3 +11,35 @@
 @import 'custom/includes/header.scss';
 @import 'custom/includes/media.scss';
 @import 'custom/includes/footer.scss';
+
+
+// Navs ========================================================================
+
+.navbar {
+  padding: 0.5rem 0.5rem;
+}
+
+.nav-tabs {
+
+  .nav-link,
+  .nav-link.active {
+    border-width: 0 0 1px 0;
+  }
+
+  .nav-link:hover,
+  .nav-link.active,
+  .nav-link.active:hover,
+  .nav-link.active:focus {
+    border-bottom: 1px solid $primary;
+  }
+
+  .nav-item + .nav-item {
+    margin-left: 0;
+  }
+}
+
+.breadcrumb {
+  &-item.active {
+    color: $gray-700;
+  }
+}
