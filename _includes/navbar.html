@@ -2,37 +2,21 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse mx-2" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-        {% for node in site.navbar_list_large %}
-            {% if node.name == page.group %}
-                {% assign active = 'active' %}
-            {% else %}
-                {% assign active = nil %}
-            {% endif %}
-            {% if node.dropdown %}
-                <div class="btn-group">
-                    <li class="nav-item {{ active }} dropdown-toggle dropdown-toggle-split dropdown-no-padding-left">
-                        <!-- Don't separate the following 2 a classes, whitespace affects css rendering! -->
-                        <a href="{{ site.baseurl }}{{ node.link }}" class="nav-link" >{{ node.name }}</a><a class="dropdown-toggle dropdown-toggle-split nav-link dropdown-sm-padding" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span></a>
-                        <div class="dropdown-menu">
-                            {% for sub in node.dropdown %}
-                                <a class="dropdown-item dropdown-light-text" href="{{ site.baseurl }}{{ sub.link }}">{{ sub.name }}</a>
-                            {% endfor %}
-                        </div>
-                    </li>
-                </div>
-            {% else %}
-                <li class="nav-item {{ active }}">
-                    <a class="nav-link" href="{{ site.baseurl }}{{ node.link }}">{{ node.name }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-        </ul>
-        <!-- <form class="form-inline my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
-        </form> -->
+   <div class="topnav" id="myTopnav">
+  <a href="#about" class="active">About</a>
+  <a href="#media">Media</a>
+       <div class="dropdown">
+    <button class="dropbtn">Gallery 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#headshots">Headshots</a>
+      <a href="#production">Production Phots</a>
     </div>
+  </div>
+   <a href="#resume">Resume</a>     
+  <a href="#contact">Contact</a>
+  </div> 
+</div>
+
 </nav>
